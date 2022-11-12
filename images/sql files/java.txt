@@ -1,0 +1,192 @@
+public class parent {
+	int x,y;
+	parent(){
+		System.out.println(" in parent");
+	}
+}
+class child extends parent{
+	child()
+	{
+		System.out.println("in child");
+	}
+	public static void main(String[] args) {
+		parent p= new parent();//in parent
+		parent p=new child();//in parent in child
+		child c= new parent();//error(incompatible types as parent cannot be converted into child)
+		child c=(child) new parent();//typecasting
+		
+	}
+}
+
+-------------------------------------------------------------------------------------------------
+class Parent{
+	public void show(){
+		System.out.println("hello");
+	}
+}
+class Child extends Parent{
+	protected void show(){
+		System.out.println("hi");
+	}
+	public static void main(String[] args){
+		Child c=new Child();
+		//c.show(10);
+		c.show();
+	}
+}
+o/p:visiblity cannot be reduced
+-------------------------------------------------------------------------------------------------------
+class Parent{
+	private void show(){
+		System.out.println("hello");
+	}
+}
+class Child extends Parent{
+	public void show(){
+		System.out.println("hi");
+	}
+	public static void main(String[] args){
+		Child c=new Child();
+		//c.show(10);
+		c.show();
+	}
+}
+o/p:hello
+-------------------------------------------------------------------------------------------------------------
+class Parent{
+	protected void show(){
+		System.out.println("hello");
+	}
+}
+class Child extends Parent{
+	public void show(){
+		System.out.println("hi");
+	}
+	public static void main(String[] args){
+		Child c=new Child();
+		//c.show(10);
+		c.show();
+	}
+}
+o/p:hi
+--------------------------------------------------------------------------------------------------------------
+class A{
+	number show(){
+		return 10;
+	}
+}
+class B extends A{
+	Integer show(){
+		return 20;
+	}
+	public static void main(String[] args){
+		A a1=new A();
+		B b1=new B();
+		System.out.println("
+	}
+}
+10 20
+--------------------------------------------------------------------------------------------------------------------
+class A{
+	Integer show(){
+		return 10;
+	}
+}
+class B extends A{
+	number show(){
+		return 20;
+	}
+	public static void main(String[] args){
+		A a1=new A();
+		B b1=new B();
+	}
+}
+o/p:ce
+-------------------------------------------------------------------------------------------------------------------------
+class A{
+	static void show(){
+		System.out.println("hello");
+	}
+}
+class B extends A{
+	void show(){
+		System.out.println("hi");
+	}
+	public static void main(String[] args){
+		B b=new B();
+		b.show();
+	}
+}
+-----------------------------------------------------------------------------------------------------------------------------
+class A{
+	final void show(){
+		System.out.println("hello");
+	}
+}
+class B extends A{
+	void show(){
+		System.out.println("hi");
+	}
+	public static void main(String[] args){
+		B b=new B();
+		b.show();
+	}
+}	
+o/p:error
+---------------------------------------------------------------------------------------------------------------------------------
+class A{
+	abstract void show();
+}
+class B extends A{
+	void show(){
+		sop("hello");
+	}
+	psvm(string[] args){
+		B b=new B();
+		b.show();
+	}
+}
+o/p: class must be declared abstract
+---------------------------------------------------------------------------------------------------------------------------------------
+abstract class A{
+	abstract void show();
+}
+class B extends A{
+	void show(){
+		sop("hello");
+	}
+	psvm(string[] args){
+		B b=new B();
+		b.show();
+	}
+}
+o/p: hello
+-------------------------------------------------------------------------------------------------------------------------------------------
+abstract class A{
+	abstract void show();
+}
+class B extends A{
+	void show(){
+		sop("hello");
+	}
+	psvm(string[] args){
+		A a=new A();
+		B b=new B();
+		b.show();
+	}
+}
+o/p:abstract class cannot be instantiated.
+------------------------------------------------------------------------------------------------------------------------------------------------
+interface I1{
+	int num=10;
+	void show();
+}
+class C implements I1{
+	void show(){
+		sop(num);
+	}
+}
+o/p:compile time error
+--------------------------------------------------------------------------------------------------
+
+		
