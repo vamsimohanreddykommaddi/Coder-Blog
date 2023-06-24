@@ -1,0 +1,40 @@
+1.declaration: Declaration is a statement describing an identifier,such as variable or function.
+	       declarations are important because they inform the compiler what the identifying word means.
+
+2.definition: Definition of a variable says where the variable gets stored i.e.,memory of the variable is
+	      allocated during definition of the variable.
+
+	In C language definition and declaration for a variable takes place at the same time(int a;)
+	but it is different in case of functions.
+
+3.Sizes of datatypes in C:
+	char(signed & unsigned)- 8-bits
+	int(short signed & short unsigned)- 16-bits
+	int(long signed & long unsigned)- 32-bits
+	float- 32 bits
+	double- 64 bits
+
+4. The main difference between signed and unsigned data is MOST SIGNIFICANT BIT.
+		
+			SIGNED			UNSIGNED
+	MSB		  -ve		     	   +ve
+	Range		 -2^n-1 t0 2^n-1 - 1		0 to 2^n - 1
+
+5.Recursion:
+	The process in which a function calls itself directly or indirectly is called as recursion.
+	Recursion in C can be applied to sorting,searching and traversal problems.6.
+
+6.Typecasting:  Converting one type of data to other type of data is called as typecasting or typeconversion.
+	         purpose:  If we know a variable is of one type and in middle of the code the variable should 
+	                         act as some other type , in that scenario we are recommended to go for typecasting.
+
+7.Array:  Array is a collection of homogeneous data items stored at contiguous memory locations.
+	declaration:   type  arrayName[arraysize];
+	Use:  They can be used to store collection of primitive datatypes such as int,float,
+	          double,char, etc of any particular type.
+
+8.  40 4 786170720
+
+9.sizeof() operator:  At any point of time for a given datatype if you want to know the size we use sizeof() operator.
+
+10. NULL in C is defined as (void*)0. Since it is a pointer ,it takes 4 bytes to store it.

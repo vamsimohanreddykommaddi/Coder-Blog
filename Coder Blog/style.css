@@ -1,0 +1,178 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*-------------------------------------------------------index.html -------------------------*/
+/*to style the whole display as one block it make it as one box*/
+ 
+
+/*to change color and remove underline*/
+li a{
+    color:white;
+    text-decoration:none;
+}
+/*to float left of navigation menu*/
+/*nav{
+    float:right;
+    word-spacing: 30px;
+    padding:20px;
+}*/
+
+/* to display in one line of navigation of list */
+/*nav li{
+    display:inline-block;
+    line-height: 80px;     /*to palce in middle of header block*
+}*/
+
+/*to create space at left*/
+.logo{
+    padding-left:20px;  /*when we leave space the navigation bar will come down to adjust this we make logo as float left*/
+    float:left;
+}
+.logo img{  /* to leave space at left only for image for right arranging of logo middle of name*/
+     padding-left:80px;
+
+}
+
+/*background picture for section tag*/
+ section .index_image{
+    height:400px; /*otherwise it show grey color at end of the section to fill with image we need to write */
+    margin-top:0px;
+}
+
+/*to create box type within  library timings*/
+
+
+/*  ----------------------------------------------login.html----------------------------------------------------*/
+section .login_image{
+    height:600px;
+    margin-top: 0px;
+    
+}
+
+
+input{
+    height:15px;
+    width:230px;
+}
+
+form .form_input{
+    margin:auto 70px;
+}
+
+/*----------------------------------------------registration.html-----------------------------------------*/
+
+section .registration_image{
+    margin-top:0px;
+    height:600px;
+    background-image:url("images/login.png");
+    background-size:cover;
+}
+
+.box2{
+    height: 550px;
+    width:370px;
+    color:white;
+    background-color:black;
+    margin:0px auto;
+    opacity:0.7;
+
+}
